@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ssfa/ros2_ws/install/yolov8_msgs/include/**",
+        "/home/ssfa/ros2_ws/install/usb_cam/include/**",
+        "/home/ssfa/ros2_ws/install/turtlebot3_msgs/include/**",
+        "/home/ssfa/ros2_ws/install/t3_action_msg/include/**",
+        "/home/ssfa/ros2_ws/install/dynamixel_sdk/include/**",
+        "/home/ssfa/ros2_ws/install/color_shape_detector/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/ssfa/ros2_ws/src/color_shape_detector/include/**",
+        "/home/ssfa/ros2_ws/src/t3/DynamixelSDK/dynamixel_sdk/include/**",
+        "/home/ssfa/ros2_ws/src/usb_cam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

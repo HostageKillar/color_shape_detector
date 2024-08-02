@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8bba038197517fac9af0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "color_shape_detector__py",
+					"jsonFile" : "directory-color_shape_detector__py-Debug-54be4b053c56b90065cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/color_shape_detector__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "color_shape_detector",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_color_shape_detector_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_color_shape_detector_egg-Debug-f69582fba676da7a585d.json",
+					"name" : "ament_cmake_python_build_color_shape_detector_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_color_shape_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_color_shape_detector-Debug-35a684cb9a1d09cb74a7.json",
+					"name" : "ament_cmake_python_copy_color_shape_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector-Debug-7d6c4cd57894bf23090f.json",
+					"name" : "color_shape_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__cpp-Debug-a92b6866c145bc64f365.json",
+					"name" : "color_shape_detector__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "color_shape_detector__py::@0163e5a2f4f46da8ec6b",
+					"jsonFile" : "target-color_shape_detector__py-Debug-c444f0047fddfaa8664a.json",
+					"name" : "color_shape_detector__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_generator_c-Debug-10bc462b2042dad675ab.json",
+					"name" : "color_shape_detector__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_generator_py-Debug-9ebd332dc90608d3ca89.json",
+					"name" : "color_shape_detector__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_c-Debug-033c3b26b148f7204a28.json",
+					"name" : "color_shape_detector__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_c__pyext-Debug-7460d04eb07e262b60ce.json",
+					"name" : "color_shape_detector__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_cpp-Debug-a0711a2918ff46262997.json",
+					"name" : "color_shape_detector__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_fastrtps_c-Debug-88de31d718b213f57dd7.json",
+					"name" : "color_shape_detector__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_fastrtps_c__pyext-Debug-d6ba60f8e9b18b82af32.json",
+					"name" : "color_shape_detector__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_fastrtps_cpp-Debug-0fc27fbf4247299cffcc.json",
+					"name" : "color_shape_detector__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_introspection_c-Debug-2b813a36b57c02370537.json",
+					"name" : "color_shape_detector__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_introspection_c__pyext-Debug-c9f3a56a2622ff4bdb9e.json",
+					"name" : "color_shape_detector__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector__rosidl_typesupport_introspection_cpp-Debug-0b7c16445245483b1683.json",
+					"name" : "color_shape_detector__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "color_shape_detector_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-color_shape_detector_uninstall-Debug-99f437f1851b1763f0ee.json",
+					"name" : "color_shape_detector_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-57087afb6d73d20e6326.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ssfa/ros2_ws/src/color_shape_detector/build",
+		"source" : "/home/ssfa/ros2_ws/src/color_shape_detector"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
