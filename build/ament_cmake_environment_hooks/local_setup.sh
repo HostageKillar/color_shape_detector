@@ -152,9 +152,7 @@ fi
 
 # list all environment hooks of this package
 ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/color_shape_detector/environment/ament_prefix_path.sh"
-ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/color_shape_detector/environment/library_path.sh"
 ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/color_shape_detector/environment/path.sh"
-ament_append_value AMENT_ENVIRONMENT_HOOKS "$AMENT_CURRENT_PREFIX/share/color_shape_detector/environment/pythonpath.sh"
 
 # source all shell-specific environment hooks of this package
 # if not returning them

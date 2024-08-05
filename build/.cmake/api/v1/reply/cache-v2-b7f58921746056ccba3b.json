@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1474,22 +1474,6 @@
 			"value" : "/usr/bin/pkg-config"
 		},
 		{
-			"name" : "PYTHON_DEBUG_LIBRARY",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
-		},
-		{
 			"name" : "PYTHON_EXECUTABLE",
 			"properties" : 
 			[
@@ -1564,22 +1548,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "PYTHON_LIBRARY_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "PYTHON_LIBRARY_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
 		},
 		{
 			"name" : "PYTHON_SOABI",
