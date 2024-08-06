@@ -26,8 +26,8 @@ class ImageSubscriber(Node):
           10)
         self.subscription # prevent unused variable warning
 
-        # self.service = self.create_service(srv_type='ssf_interfaces/srv/NorthGoalAngleSv',srv_name='north_goal_angle_sv',callback=self.process_image_callback)
-        # self.service
+        self.server = self.create_service(NorthGoalAngleSv, '/north_goal_angle_sv', callback=self.process_image_callback)
+        self.resp = NorthAngleSv.Response()
 
         # Used to convert between ROS and OpenCV images
         self.br = CvBridge()
@@ -202,17 +202,17 @@ class ImageSubscriber(Node):
 
                     # Left way
                     if cX < int("experimental value(line 1)"):
-                        response.way = 1
+                        response.response = 1
                         print("Image process completed successfully.")
 
                     # Middle Way
                     elif int("experimental value(line 1)") < cX < int("experimental value(line 2)"):
-                        response.way = 2
+                        response.response = 2
                         print("Image process completed successfully.")
 
                     # Right Way
                     elif int("experimental value(line 2)") - cX < int("experimental value(line 3)"):
-                        response.way = 3
+                        response.resp = 3
                         print("Image process completed successfully.")
                     else:
                         print("Error") #TODO Add Error message
