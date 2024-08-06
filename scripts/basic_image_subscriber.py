@@ -26,8 +26,8 @@ class ImageSubscriber(Node):
           10)
         self.subscription # prevent unused variable warning
 
-        self.service = self.create_service(srv_type='ssf_interfaces/srv/NorthGoalAngleSv',srv_name='north_goal_angle_sv',callback=self.process_image_callback)
-        self.service
+        # self.service = self.create_service(srv_type='ssf_interfaces/srv/NorthGoalAngleSv',srv_name='north_goal_angle_sv',callback=self.process_image_callback)
+        # self.service
 
         # Used to convert between ROS and OpenCV images
         self.br = CvBridge()
