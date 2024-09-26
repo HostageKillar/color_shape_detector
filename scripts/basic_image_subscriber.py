@@ -26,7 +26,7 @@ class ImageSubscriber(Node):
           10)
         self.subscription # prevent unused variable warning
 
-        self.server = self.create_service(NorthGoalAngleSv, '/north_goal_angle_sv', callback=self.process_image_callback)
+        self.server = self.create_service(NorthGoalAngleSv, '/north_goal_angle_sv', self.service_callback)
         self.resp = NorthAngleSv.Response()
 
         # Used to convert between ROS and OpenCV images
@@ -47,7 +47,7 @@ class ImageSubscriber(Node):
         current_frame = self.br.imgmsg_to_cv2(data)
 
         # Process method that detect shapes and color
-        processed_frame = self.process_image_callback(current_frame)
+        processed_frame = self.process_image(current_frame)
 
 
         # Display image
@@ -73,7 +73,7 @@ class ImageSubscriber(Node):
         cv2.rectangle(image, (pt[0], pt[1] + baseline), (pt[0] + text_size[0], pt[1] - text_size[1]), (200, 200, 200), cv2.FILLED)
         cv2.putText(image, label, pt, fontface, scale, (0, 0, 0), thickness, 8)
 
-    def process_image_callback(self, msg, response):
+    def process_image(self, msg):
         """
         Detecte shapes and color.
         """
@@ -198,20 +198,25 @@ class ImageSubscriber(Node):
 
 
                 # Find the correct way
-                if detected_color == "Goal color here" and detected_shape == "goal shape here":
+                if detected_color == "red" and detected_shape == "triangle":
 
+                img_input_width, img_input_height = img_input.shape
+                
+                X_point_1 = img_input_width * (1/3)
+                X_point_2 = img_input_width * (2/3)
+                
                     # Left way
-                    if cX < int("experimental value(line 1)"):
+                    if cX < X_point_1:
                         response.response = 1
                         print("Image process completed successfully.")
 
                     # Middle Way
-                    elif int("experimental value(line 1)") < cX < int("experimental value(line 2)"):
+                    elif X_point_1 < cX < X_point_2:
                         response.response = 2
                         print("Image process completed successfully.")
 
                     # Right Way
-                    elif int("experimental value(line 2)") - cX < int("experimental value(line 3)"):
+                    elif cX < X_point_2:
                         response.resp = 3
                         print("Image process completed successfully.")
                     else:
