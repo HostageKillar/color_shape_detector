@@ -58,8 +58,11 @@ class ImageSubscriber(Node):
         cv2.waitKey(1)
 
     def service_callback(self, request, response):
+        response = 
         if request is not None:
-            response
+            print resquest
+            print response
+        re
 
 
     def set_label(self, image, label, contour):
@@ -212,17 +215,17 @@ class ImageSubscriber(Node):
                 
                     # Left way
                     if cX < X_point_1:
-                        response = 0
+                        self.way_probe = 0
                         print("Image process completed successfully.")
 
                     # Middle Way
                     elif X_point_1 < cX < X_point_2:
-                        response = 1
+                        self.way_probe = 1
                         print("Image process completed successfully.")
 
                     # Right Way
                     elif cX < X_point_2:
-                        response = 2
+                        self.way_probe = 2
                         print("Image process completed successfully.")
                     else:
                         print("Error") #TODO Add Error message
