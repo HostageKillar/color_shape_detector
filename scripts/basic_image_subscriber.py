@@ -5,6 +5,7 @@ from sensor_msgs.msg import Image # Image is the message type
 from cv_bridge import CvBridge # Package to convert between ROS and OpenCV Images
 import cv2 # OpenCV library
 import numpy as np
+from ssf_interfaces.srv import NorthGoalAngleSv
 
 class ImageSubscriber(Node):
     """
@@ -55,6 +56,10 @@ class ImageSubscriber(Node):
         cv2.imshow("shape detected", processed_frame) # Processed Image
 
         cv2.waitKey(1)
+
+    def service_callback(self, request, response):
+        if request is not None:
+            response
 
 
     def set_label(self, image, label, contour):
@@ -207,17 +212,17 @@ class ImageSubscriber(Node):
                 
                     # Left way
                     if cX < X_point_1:
-                        response.response = 1
+                        response = 0
                         print("Image process completed successfully.")
 
                     # Middle Way
                     elif X_point_1 < cX < X_point_2:
-                        response.response = 2
+                        response = 1
                         print("Image process completed successfully.")
 
                     # Right Way
                     elif cX < X_point_2:
-                        response.resp = 3
+                        response = 2
                         print("Image process completed successfully.")
                     else:
                         print("Error") #TODO Add Error message
