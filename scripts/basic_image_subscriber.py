@@ -58,11 +58,11 @@ class ImageSubscriber(Node):
         cv2.waitKey(1)
 
     def service_callback(self, request, response):
-        response = 
+        response = self.way_probe
         if request is not None:
             print resquest
             print response
-        re
+        return response
 
 
     def set_label(self, image, label, contour):
